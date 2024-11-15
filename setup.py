@@ -22,15 +22,15 @@ def read_requirements(path):
 
 
 setup(
-    name="repository_url_name",
+    name="PyRobotIO-ESP32",
     version="0.0.1",
     packages=find_packages(exclude=["tests", ".github"]),
-    description="repository_description",
-    author="author_name",
-    author_email="author_email_address",
+    description="PyRobotIO-ESP32 created by jackcheung-lscm",
+    author="jackcheung-lscm",
+    author_email="jcheung@lscm.hk",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    url="https://github.com/author_name/repository_url_name/",
+    url="https://github.com/jackcheung-lscm/PyRobotIO-ESP32/",
     install_requires=read_requirements("requirements.txt"),
     extras_require={
         "dev": read_requirements("requirements-test.txt")
