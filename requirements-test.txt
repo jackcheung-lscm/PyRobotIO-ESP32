@@ -1,0 +1,7 @@
+mypy
+flake8
+pytest
+pytest-cov
+pytest-mock
+pytest-base-url
+
