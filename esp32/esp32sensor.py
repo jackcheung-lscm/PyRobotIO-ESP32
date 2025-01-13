@@ -51,7 +51,7 @@ sensor_instance = BLESensor()
 @router.post("/open")
 def open_device():
     try:
-        device_id = "COM3"
+        device_id = sensor_instance.device_id
         sensor_instance.ser = serial.Serial(device_id, 115200, timeout=3)
         sensor_instance.is_open = sensor_instance.ser.is_open
         if sensor_instance.is_open and not sensor_instance.thread.is_alive():
