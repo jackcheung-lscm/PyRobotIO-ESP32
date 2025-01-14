@@ -1,0 +1,7 @@
+Sample Output
+
+for beacon :
+{'sensor': 'beacon', 'devices': [{'Major': 1800, 'Minor': 1286, 'UUID': '01122334-4556-6778-899a-abbccddeeff0', 'RSSI': -48}, {'Major': 1800, 'Minor': 1286, 'UUID': '01122334-4556-6778-899a-abbccddeeff0', 'RSSI': -48}, {'Major': 54424, 'Minor': 30214, 'UUID': '50765cb7-d9ea-4e21-99a4-fa879613a492', 'RSSI': -50}, {'Major': 32041, 'Minor': 15254, 'UUID': '6c73636d-706f-6c79-fffe-00000000fffe', 'RSSI': -65}]}
+
+for iaq:
+{'sensor': 'EnvSensor', 'CO2': 785, 'temperature': 23.5009, 'humidity': 42.67883}
