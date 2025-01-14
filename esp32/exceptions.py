@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class DeviceError(Exception):
     """Base class for sensor exceptions."""
     pass
@@ -19,4 +20,27 @@ class ReadError(DeviceError):
 
 class WriteError(DeviceError):
     """Raised when a device write operation fails."""
+=======
+class DeviceError(Exception):
+    """Base class for sensor exceptions."""
+    pass
+
+
+class ConnectionError(DeviceError):
+    """Raised when a device connection fails."""
+    pass
+
+
+class TimeoutError(DeviceError):
+    """Raised when a device read operation times out."""
+    pass
+
+
+class ReadError(DeviceError):
+    """Raised when a device read operation fails."""
+    pass
+
+class WriteError(DeviceError):
+    """Raised when a device write operation fails."""
+>>>>>>> 74a42ff962656df9713ac8346efeef1847d7c105
     pass

@@ -1,1 +1,3 @@
-PyRobotIOBase @ git+ssh://git@github.com/LSCM-ARM/PyRobotIOBase.git@main
+uvicorn[standard]
+fastapi
+pyserial
