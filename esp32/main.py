@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from esp32sensor import router  # The router already has a global sensor_instance
+from esp32fastapi import router  # The router already has a global sensor_instance
 
 app = FastAPI()
 
