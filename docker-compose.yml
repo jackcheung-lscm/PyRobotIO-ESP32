@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  esp32-api:
+    build: .
+    ports:
+      - "9000:9000"
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"  # Map the USB device for ESP32 communication
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
