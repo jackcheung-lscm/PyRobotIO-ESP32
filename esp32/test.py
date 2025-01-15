@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from esp32sensor import BLESensor
 import asyncio
 import time
@@ -17,24 +16,4 @@ async def main():
     print(ret1)
     print(ret2)
 
-=======
-from esp32sensor import BLESensor
-import asyncio
-import time
-sensor = BLESensor("COM3")
-
-sensor.open()
-
-
-async def main():
-    task1 = asyncio.create_task(sensor.read_beacon(10))
-    ret1 = await task1
-    await asyncio.sleep(0.5)
-    task2 = asyncio.create_task(sensor.read_sensor())
-    ret2 = await task2
-
-    print(ret1)
-    print(ret2)
-
->>>>>>> 74a42ff962656df9713ac8346efeef1847d7c105
 asyncio.run(main())
